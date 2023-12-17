@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree 2</title>
+    <link rel="stylesheet" href="saree 2.css">
+</head>
+<body>
+    <h1>Saree Sansaar</h1>
+    
+    
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Party wear saree 1.jpg">
+            <img src="Party wear saree 1.jpg" alt="Cinque Terre" width="400" height="500">
+          </a>
+          <div class="desc"><h1> Party Wear Saree</h1>
+            <p class="price">Rs.25000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Party wear saree 2.jpg">
+            <img src="Party wear saree 2.jpg" alt="Forest" width="400" height="500">
+          </a>
+          <div class="desc"><h1> Party Wear Saree</h1>
+            <p class="price">Rs.15000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Party wear saree 4.jpg">
+            <img src="Party wear saree 4.jpg" alt="Northern Lights"width="400" height="500">
+          </a>
+          <div class="desc"><h1>Party Wear Saree</h1>
+            <p class="price">Rs.10000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Party wear saree 5.jpg">
+            <img src="Party wear saree 5.jpg" alt="Mountains" width="400" height="500">
+          </a>
+          <div class="desc"><h1>Party Wear Saree</h1>
+            <p class="price">Rs.10000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+      <br>
+      <div class="container">
+     <center>  <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="img 5.jpg" width="600" height="300">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="img 2.jpg" width="600" height="300">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="ethnic wear 5.jpg" width="600" height="300">
+          </div>
+        
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="ethnic wear 1.jpg" width="600" height="300">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="ethnic wear saree 2.jpg" width="600" height="300">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="ethnic wear saree 3.jpg" width="600" height="300">
+        </div></center> 
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="img 5.jpg" style="width:100%" onclick="currentSlide(1)" alt="Silk cotton Rs:5000">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img 2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Silk cotton Rs:4000">
+          </div>
+         
+          <div class="column">
+            <img class="demo cursor" src="ethnic wear saree 2.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Ethnic Wear Saree Rs:3000">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="ethnic wear 1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ethnic Wear Saree Rs:5000">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="ethnic wear saree 3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ethnic Wear Saree Rs:4000">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="ethnic wear saree 5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Ethnic Wear Saree Rs:4000">
+          </div>
+        </div>
+      </div>
+      
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Silk saree 3.jpg">
+            <img src="Silk saree 3.jpg" alt="Cinque Terre" width="400" height="500">
+          </a>
+          <div class="desc"><h1> Silk Saree</h1>
+            <p class="price">Rs.25000</p>
+            <p><button>Add to Cart</button></p></div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Silk saree 1.jpg">
+            <img src="Silk saree 1.jpg" alt="Forest" width="400" height="500">
+          </a>
+          <div class="desc"><h1> Silk Saree</h1>
+            <p class="price">Rs.15000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Silk saree 2.jpg">
+            <img src="Silk saree 2.jpg" alt="Northern Lights"width="400" height="500">
+          </a>
+          <div class="desc"><h1>Silk Saree</h1>
+            <p class="price">Rs.10000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="stylish saree 1.jpg">
+            <img src="stylish saree 1.jpg" alt="Mountains" width="400" height="500">
+          </a>
+          <div class="desc"><h1>Stylish saree</h1>
+            <p class="price">Rs.10000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+      <br>
+       
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="stylish saree 2.jpg">
+            <img src="stylish saree 2.jpg" alt="Cinque Terre" width="400" height="500">
+          </a>
+          <div class="desc"><h1> Stylish Saree</h1>
+            <p class="price">Rs.25000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="stylish saree 3.jpg">
+            <img src="stylish saree 3.jpg" alt="Forest" width="400" height="500">
+          </a>
+          <div class="desc"><h1> Stylish Saree</h1>
+            <p class="price">Rs.15000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="stylish saree 4.jpg">
+            <img src="stylish saree 4.jpg" alt="Northern Lights"width="400" height="500">
+          </a>
+          <div class="desc"><h1>Stylish Saree</h1>
+            <p class="price">Rs.10000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Silk saree 5.jpg">
+            <img src="Silk saree 5.jpg" alt="Mountains" width="400" height="500">
+          </a>
+          <div class="desc"><h1>Silk Saree</h1>
+            <p class="price">Rs.10000</p>
+            <p><button><a href="/saree pro/Final page/final.page.html">Add to Cart</button></p></div></a>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+      <br>
+      
+</body>
+</html>
